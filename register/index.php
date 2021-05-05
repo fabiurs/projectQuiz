@@ -10,7 +10,8 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <?php $_SESSION["loggedin"] = "true";?>
+
+
 
     <a href="../">homepage</a>
 </body>

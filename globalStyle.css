@@ -53,6 +53,10 @@ footer{
     padding: 10px;
     background-color: #0D0D0D;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer .row,

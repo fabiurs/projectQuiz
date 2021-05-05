@@ -1,5 +1,7 @@
 <?php
     session_start();
+
+    require("verifyform.php");
 ?>
 
 <!DOCTYPE html>
@@ -30,31 +32,34 @@
             </div>
             
             <div class="gobacklink">
-                <a href="../index.php">Go to Homepage</a>
+                <a href="../index.php">Home</a>
             </div>
         </div>
     </header>
 
 
 
-
-
-    <?php 
-        if($_SESSION["loggedin"] == true){
-            echo "You are already logged in! <a href='../'>Go to homepage </a>";           
-        }
-    ?>
-
+    <main>
+        <div class="row">
+            <div class="c-form">
+                <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
     
-    <form class="<?php if($_SESSION["loggedin"] == true) echo "hide-form" ?>" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    <label for="username">Username</label>
-    <input type="text" name="username">
-    
-    <label for="password">Password</label>
-    <input type="password" name="password">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" required>
 
-    <input type="submit" value="Log In">
+                    <input type="submit" value="Log In">
+                </form>
+                
+                <p> <?php echo $loginFailed ?> </p>
 
+                <div class="c-message-register">
+                    <p>Don&#39;t have an account? <a href="../register">Register</a> </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <footer>
