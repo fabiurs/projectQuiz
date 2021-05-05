@@ -3,7 +3,6 @@
 session_start();
 
 include("header.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -38,15 +37,19 @@ include("header.php");
         </div>
     </header>
 
+
+    
     <main>
         <div class="row">
 
         </div>
     </main>
 
+
+
     <footer>
         <div class="row">
-            <p>© FABIAN URSACHE 2021</p>
+            <p>© Fabian Ursache 2021</p>
         </div>
 
         <div class="row">
