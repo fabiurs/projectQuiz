@@ -20,10 +20,35 @@ a{
 }
 
 header{
-    background-color: #1B80BF;
+    background-color: #0D0D0D;
 
 }
 
 header a{
+    color: white;
+}
+
+
+/****************/
+/****************/
+/* Footer Style */
+/****************/
+/****************/
+
+footer{
+    padding: 10px;
+    background-color: #0D0D0D;
+    margin-top: 20px;
+}
+
+footer .row,
+footer .row .social-links{
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer p, footer a{
     color: white;
 }
