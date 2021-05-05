@@ -2,9 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+body{
+    background-color: #F2F2F2;
+}
+
 
 .row{
     max-width: 1120px;
     margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #1B80BF;
+
+}
+
+header a{
+    color: white;
 }
