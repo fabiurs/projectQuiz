@@ -28,7 +28,7 @@ session_start();
 
     <main>
         <div class="row">
-
+            <p>acesta este un mesaj</p>
         </div>
     </main>
 
