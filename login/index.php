@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     require("verifyform.php");
 ?>
 
@@ -41,7 +40,7 @@
 
     <main>
         <div class="row">
-            <div class="c-form">
+            <div class="c-form <?php if($_SESSION["loggedin"] === "true") echo " hide-form" ?>">
                 <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
                     <label for="username">Username</label><br>
                     <input type="text" id="username" name="username" required><br>
@@ -51,11 +50,17 @@
                     <input type="submit" value="Log In">
                 </form>
                 
-                <p> <?php echo $loginFailed ?> </p>
+                <p class="mesaj-red"> <?php echo $loginFailed ?> </p>
 
                 <div class="c-message-register">
                     <p>Don&#39;t have an account? <a href="../register">Register</a> </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="row <?php if($_SESSION["loggedin"] === "false") echo " hide-row" ?>">
+            <div class="c-user">
+                <h1>Hello, <?php if($_SESSION["username"]) echo $_SESSION["username"] ?> </h1>
             </div>
         </div>
     </main>

@@ -81,3 +81,11 @@ footer i{
 .mesaj-red{
     color: red;
 }
+
+.hide-form{
+    display: none!important;
+}
+
+.hide-row{
+    display: none!important;
+}

@@ -41,10 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION["userid"] = $row["id"];
                 $_SESSION["username"] = $row["username"];
             }
-
-
-        echo $_SESSION["userid"];
-        echo $_SESSION["username"];
+        
+        $_SESSION["loggedin"] = "true";
+        
         } else {
             $loginFailed = "Utilizatorul nu a fost gasit";
         }

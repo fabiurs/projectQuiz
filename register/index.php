@@ -35,7 +35,7 @@ require("verifyform.php");
 
     <main>
         <div class="row">
-            <div class="c-form">
+            <div class="c-form <?php if($_SESSION["loggedin"] == "true") echo " hide-form" ?>">
                 <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
     
                     <label for="username">Username</label><br>
