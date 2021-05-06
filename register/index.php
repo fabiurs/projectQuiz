@@ -60,6 +60,8 @@ require("verifyform.php");
                 </div>
             </div>
         </div>
+
+        <?php if($_SESSION["loggedin"] === "true") require("../greetings.php"); ?>
     </main>
 
     <footer>

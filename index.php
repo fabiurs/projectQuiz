@@ -47,6 +47,8 @@ include("header.php");
         <div class="row">
 
         </div>
+
+        <?php if($_SESSION["loggedin"] === "true") require("greetings.php"); ?>
     </main>
 
 
