@@ -75,3 +75,9 @@ footer i{
     font-size: 25px;
     margin: 5px 10px;
 }
+
+
+/***********/
+.mesaj-red{
+    color: red;
+}

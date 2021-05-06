@@ -1,5 +1,7 @@
 <?php 
 session_start();
+
+require("verifyform.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,8 +40,15 @@ session_start();
     
                     <label for="username">Username</label><br>
                     <input type="text" id="username" name="username" required><br>
+                    <span class="mesaj-red"> <?php echo $mesajusername ?> </span>
+
+                    
                     <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" required> <br>
+
+                    <label for="password">Repeat Password</label><br>
+                    <input type="password" id="repeatpassword" name="repeatpassword" required> <br>
+                    <span class="mesaj-red"> <?php echo $mesajpassword ?> </span>
 
                     <input type="submit" value="Log In">
                 </form>
@@ -47,7 +56,7 @@ session_start();
                 <p> <?php echo $loginFailed ?> </p>
 
                 <div class="c-message-register">
-                    <p>Don&#39;t have an account? <a href="../register">Register</a> </p>
+                    <p>Already have an account? <a href="../login">Log In</a> </p>
                 </div>
             </div>
         </div>
