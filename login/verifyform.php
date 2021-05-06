@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = input_test($_POST["username"]);
     $userpassword = input_test($_POST["password"]);
 
-    //$userpassword = md5($userpassword);
+    $userpassword = md5($userpassword);
+
     // create database conn
 
     $dbservername = "localhost";

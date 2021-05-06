@@ -43,7 +43,6 @@
         <div class="row">
             <div class="c-form">
                 <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
-    
                     <label for="username">Username</label><br>
                     <input type="text" id="username" name="username" required><br>
                     <label for="password">Password</label><br>

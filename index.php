@@ -6,6 +6,8 @@ if( !isset($_SESSION["loggedin"])){
     $_SESSION["loggedin"] = "false";
 }
 
+print_r($_SESSION);
+
 include("header.php");
 ?>
 
