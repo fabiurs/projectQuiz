@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // verific daca username deja exista in baza de date
             if($result->num_rows > 0){
-                $mesajusername = "$username username is taken <br>";
+                $mesajusername = "$username username is taken <br> Are you that user? <a href='../login'> Log In </a> <br>";
             }
             // daca acest username nu este folosit atunci creez contul
             else{

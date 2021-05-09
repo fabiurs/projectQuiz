@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     else{
 
-        $sql = "SELECT id, username, score FROM users WHERE username='$username' AND password='$userpassword'";
+        $sql = "SELECT isadmin, id, username, score FROM users WHERE username='$username' AND password='$userpassword'";
         
         $result = $conn->query($sql);
 
@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION["userid"] = $row["id"];
                 $_SESSION["username"] = $row["username"];
                 $_SESSION["score"] = $row["score"];
+                $_SESSION["adminlogged"] = $row["isadmin"];
             }
         
         $_SESSION["loggedin"] = "true";
