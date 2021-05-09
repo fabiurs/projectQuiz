@@ -1,0 +1,49 @@
+.c-questions .c-single-question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    margin-top: 20px;
+}
+
+.c-questions .categorie{
+    width: 10%;
+    text-transform: capitalize;
+
+}
+
+.c-questions .enunt{
+    width: 30%;
+}
+
+.c-questions .raspuns{
+    width: 10%;
+}
+
+.c-questions .deletebtn{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-questions .deletebtn .btn-delete{
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.c-questions .deletebtn .btn-delete:hover{
+    background: white;
+    color: red;
+    cursor: pointer;
+}
+
+.hide-question{
+    max-height: 0px!important;
+    overflow: hidden;
+}

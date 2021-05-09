@@ -32,17 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO questions (enunt, category, id, raspuns1, raspuns2, raspuns3, raspuns4, raspunscorect) VALUES ('$quest', '$categ', '$qid', '$ans1', '$ans2', '$ans3', '$ans4', '$anscorrect')";
         
         if ($conn->query($sql) === TRUE) {
-            $mesaj = "Intrebarea a fost adaugata!";
+            $mesaj = "Question added!";
         } else {
-            $mesaj = "Intrebarea nu a putut fi adaugata! <br>" . "Error: " . $sql . "<br>" . $conn->error ;
+            $mesaj = "Cannot add question! <br>" . "Error: " . $sql . "<br>" . $conn->error ;
         }
     }
     $conn->close();
 
 }
-
-
-
   
 function input_test($data) {
     $data = trim($data);
