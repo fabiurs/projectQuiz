@@ -3,6 +3,8 @@
 session_start();
 
 include("../header.php");
+
+include("verifyform.php");
 ?>
 
 <!DOCTYPE html>
@@ -40,8 +42,37 @@ include("../header.php");
 
     
     <main>
-        <div class="row">
+        <div class="row" id="addquestion">
+            <h2>Add question</h2>
+            <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+                    <label for="question">Question</label><br>
+                    <textarea id="question" name="question" rows="5" required> </textarea> <br>
+                    
+                    <label for="category">Category</label><br>
+                    <input type="text" id="category" name="category" required><br>
 
+                    <label for="answer1">Answer 1</label><br>
+                    <input type="text" id="answer1" name="answer1" required><br>
+                    
+                    <label for="answer2">Answer 2</label><br>
+                    <input type="text" id="answer2" name="answer2" required><br>
+                    
+                    <label for="answer3">Answer 3</label><br>
+                    <input type="text" id="answer3" name="answer3" required><br>
+                    
+                    <label for="answer4">Answer 4</label><br>
+                    <input type="text" id="answer4" name="answer4" required><br>
+                    
+                    <label for="correctanswer">Correct Answer</label><br>
+                    <input type="text" id="correctanswer" name="correctanswer" required><br>
+                    <br>
+                    <input type="submit" value="Add question">
+
+                    <br>
+                    <?php echo $mesaj ?>
+                    <br>
+                    
+                </form>
         </div>
 
     </main>
