@@ -93,3 +93,7 @@ footer i{
 .hide-row{
     display: none!important;
 }
+
+.hide-results{
+    display: none;
+}

@@ -1,3 +1,8 @@
+document.getElementById("closeBtn").addEventListener("click", function(){
+    document.querySelector(".word-response").classList.add("hide-results");
+    document.getElementById("wordInput").value = "";
+});
+
 document.getElementById("wordSearch").addEventListener("click", function getWord() {
 
     var theWord = document.getElementById("wordInput").value;
@@ -6,7 +11,7 @@ document.getElementById("wordSearch").addEventListener("click", function getWord
         document.getElementById("error-message").innerText = "You did not enter a word!";
     } else {
         document.getElementById("error-message").innerText = "";
-
+        document.querySelector(".word-response").classList.remove("hide-results");
         searchForDefinition(theWord);
     }
 
