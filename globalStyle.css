@@ -43,6 +43,10 @@ header a{
     margin-left: 20px;
 }
 
+.homepage .home-link{
+    display: none;
+}
+
 /****************/
 /****************/
 /* Footer Style */

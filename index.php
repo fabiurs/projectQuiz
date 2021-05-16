@@ -27,7 +27,7 @@ include("header.php");
 
 </head>
 
-<body>
+<body class="homepage">
 
     <header>
         <div class="row">
@@ -48,9 +48,10 @@ include("header.php");
         <?php if($_SESSION["loggedin"] === "true") require("greetings.php"); ?>
 
         <div class="row">
-
-            <?php if($_SESSION["adminlogged"] === "1") echo "<a href='questions'>Edit questions</a>"; ?>
+            <?php if($_SESSION["adminlogged"] === "1") echo "You can <a href='questions'>Edit questions</a>"; ?>
         </div>
+
+        <?php if($_SESSION["loggedin"] === "true") require("getWordsApi/info.php"); ?>
 
     </main>
 
