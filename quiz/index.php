@@ -36,8 +36,6 @@ include("../header.php");
             </div>
         </div>
     </header>
-
-
     
     <main>
         <div class="row">
@@ -46,6 +44,9 @@ include("../header.php");
 
         <div class="row">
             <p>Choose a category</p>
+            <div id="c-categ">
+                
+            </div>
         </div>
     </main>
 
@@ -69,6 +70,8 @@ include("../header.php");
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
