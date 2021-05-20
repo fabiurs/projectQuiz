@@ -15,6 +15,7 @@ include("../header.php");
     <title>Online Quiz</title>
 
     <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="stylesheet" href="localStyle.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -38,19 +39,47 @@ include("../header.php");
     </header>
     
     <main>
-        <div class="row">
+        <div id="first-row" class="row has-transition">
             <h2>Start a quiz!</h2>
         </div>
 
-        <div class="row">
+        <div id="row-categ" class="row has-transition">
             <p>Choose a category</p>
             <div id="c-categ">
-                
+                <button onclick="getCode('sport')">Sport</button>
+                <button onclick="getCode('geography')">Geography</button>
+                <button onclick="getCode('culture')">Culture</button>
+                <button onclick="getCode('tech')">Tech</button>
             </div>
         </div>
+
+        <div id="instructions" class="row">
+            <h3>Instructions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est doloremque animi. Rerum deleniti neque facere sed? Quas soluta excepturi, sit ipsum quos nemo, quia culpa velit, corrupti asperiores libero eligendi! Vel accusantium nostrum similique rem ex dolorum, reiciendis nihil?</p>
+        
+            <button onClick="startQuiz()">Accept</button>
+            <button onClick="showCateg()">Back</button>
+
+        </div>
+
+        <div id="row-questions" class="row has-transition">
+            <div id="title">
+                <p></p>
+            </div>
+
+            <div id="question">
+                <p></p>
+            </div>
+
+            <div class="responses">
+                <button id="r-btn-1" class="response-btn"></button>
+                <button id="r-btn-2" class="response-btn"></button>
+                <button id="r-btn-3" class="response-btn"></button>
+                <button id="r-btn-4" class="response-btn"></button>
+            </div>
+
+        </div>
     </main>
-
-
 
     <footer>
         <div class="row">
