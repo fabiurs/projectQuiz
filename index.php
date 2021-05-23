@@ -46,6 +46,14 @@ include("header.php");
     
     <main>
 
+        <div class="description row">
+            <h5>What is a quiz?</h5>
+            <p>A quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills. They can also be televised for entertainment purposes, often in a game show format.</p>
+
+            <br> <br>
+
+            <?php if($_SESSION["loggedin"] === "false") echo '<p>To take part in this challenge please <a href="register">Register</a> </p>' ; ?>
+        </div>
         <?php if($_SESSION["loggedin"] === "true") require("greetings.php"); ?>
 
         <div class="row admin-edit">
@@ -55,8 +63,6 @@ include("header.php");
         <?php if($_SESSION["loggedin"] === "true") require("getWordsApi/info.php"); ?>
 
     </main>
-
-
 
     <footer>
         <div class="row">

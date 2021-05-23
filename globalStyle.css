@@ -1,23 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: white;
     position: relative;
     min-height: 100vh;
 }
 
 
-.row{
+.row {
     max-width: 1120px;
     margin: auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -28,24 +28,24 @@ a{
 /****************/
 
 
-header{
+header {
     background-color: #0D0D0D;
     padding: 20px;
 }
 
-header .row{
+header .row {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: white;
     margin-left: 20px;
 }
 
-.homepage .home-link{
+.homepage .home-link {
     display: none;
 }
 
@@ -55,7 +55,7 @@ header a{
 /****************/
 /****************/
 
-footer{
+footer {
     padding: 10px;
     background-color: #0D0D0D;
     margin-top: 20px;
@@ -66,37 +66,38 @@ footer{
 }
 
 footer .row,
-footer .row .social-links{
-    width: 100%!important;
+footer .row .social-links {
+    width: 100% !important;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-footer p, footer a{
+footer p,
+footer a {
     color: white;
 }
 
-footer i{
+footer i {
     font-size: 25px;
     margin: 5px 10px;
 }
 
 
 /***********/
-.mesaj-red{
+.mesaj-red {
     color: red;
 }
 
-.hide-form{
-    display: none!important;
+.hide-form {
+    display: none !important;
 }
 
-.hide-row{
-    display: none!important;
+.hide-row {
+    display: none !important;
 }
 
-.hide-results{
+.hide-results {
     display: none;
 }
 
@@ -107,27 +108,28 @@ footer i{
 /*************/
 
 .admin-edit,
-.start-quiz-row{
+.start-quiz-row {
     margin-top: 20px;
 }
 
 .admin-edit a,
-.start-quiz-row a{
+.start-quiz-row a {
     text-decoration: underline;
     color: black;
     line-height: 20px;
     text-transform: uppercase;
 }
 
-.c-user{
+.c-user {
     padding: 50px 0;
 }
 
-@media only screen and (max-width: 1130px){
-    .row{
+@media only screen and (max-width: 1130px) {
+    .row {
         padding: 0 20px;
     }
 }
+
 /*************/
 /*************/
 /*************/
@@ -135,13 +137,62 @@ footer i{
 /*************/
 /*************/
 
-.logo h1{
+.logo h1 {
     font-family: 'Shadows Into Light', cursive;
     color: white;
     user-select: none;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
+}
+
+.username {
+    animation-name: colorfull;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorfull {
+    0% {
+        color: red;}
+    10% {
+        color: yellow;}
+    10% {
+        color: green;}
+    10% {
+        color: lime;}
+    10% {
+        color: cyan;}
+    10% {
+        color: blue;}
+    10% {
+        color: blueviolet;}
+    10% {
+        color: violet;}
+    10% {
+        color: burlywood;}
+    50% {
+        color: darkturquoise;}
+    100% {
+        color: black;}
+}
+
+.description h5{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.description p{
+    text-align: center;
+}
+
+.description a{
+    text-decoration: none;
+    animation-name: colorfull;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
