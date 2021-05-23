@@ -23,4 +23,15 @@
 #instructions,
 #row-questions{
     opacity: 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.correct-ans{
+    background-color: rgba(0, 255, 0, 0.541);
+}
+
+.not-correct-ans{
+    background-color: rgba(255, 0, 0, 0.548);
 }

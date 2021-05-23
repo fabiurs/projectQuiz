@@ -66,7 +66,9 @@ include("../header.php");
             <div id="title">
                 <p></p>
             </div>
-
+            <div id="c-question-number">
+                Question number <span id="question-number">1</span>
+            </div>
             <div id="question">
                 <p></p>
             </div>
@@ -77,6 +79,11 @@ include("../header.php");
                 <button id="r-btn-3" class="response-btn"></button>
                 <button id="r-btn-4" class="response-btn"></button>
             </div>
+
+            <div class="next">
+                <button id="verify">Next</button>
+            </div>
+            <div class="mesaj-eroare1"></div>
 
         </div>
     </main>

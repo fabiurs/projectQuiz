@@ -6,7 +6,9 @@
 }
 
 body{
-    background-color: #F2F2F2;
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
 }
 
 
@@ -96,4 +98,49 @@ footer i{
 
 .hide-results{
     display: none;
+}
+
+/*************/
+/*************/
+/*************/
+/*************/
+/*************/
+
+.c-user{
+    padding: 50px 0;
+}
+
+.word-response{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px 20px 30px 50px ;
+    position: relative;
+}
+
+.word-response li{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.word-response li::before{
+    content: "->";
+    position: absolute;
+    left: 0;
+}
+
+.c-close{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.synonyms{
+    padding: 20px 0;
+}
+
+.myword{
+    text-transform: uppercase;
+    font-weight: bold;
 }
