@@ -35,3 +35,76 @@
 .not-correct-ans{
     background-color: rgba(255, 0, 0, 0.548);
 }
+
+.responses{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.response-btn{
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.chosed-response, .response-btn:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.mesaj-eroare1{
+    color: red;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0;
+}
+
+#verify{
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#question p{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#first-row{
+    margin-top: 50px;
+}
+
+
+#first-row h2, 
+#row-categ p{
+    text-align: center;
+}
+
+#row-categ{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    #c-categ, .responses{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .responses{
+        padding-top: 0;
+    }
+
+    #c-categ button, .responses button{
+        margin-top: 30px;
+    }
+}

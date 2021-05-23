@@ -62,7 +62,6 @@ function getInfo(id) {
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200){
-            console.log(id);
         
             qArray = JSON.parse(this.responseText);
         
@@ -144,7 +143,6 @@ function getNumberOfNextQuestion(){
 
 function nextQuestion(){
     if(verifyNumberOfResponsesChosed()){
-        console.log(noOfCurrentQuestion);
         let userResponse = document.getElementsByClassName("chosed-response")[0].innerText;
         if(userResponse === rCorrect){
             correctAnswer();
@@ -198,6 +196,8 @@ function verifyEnd(){
         document.getElementById("row-questions").style.opacity = "0";
         setTimeout(() => {
             document.getElementById("row-questions").style.display = "none";
+            document.getElementById("points").innerText = points;
+            document.getElementById("finish-msj").style.display = "block";
         }, 1000);
     }
 }

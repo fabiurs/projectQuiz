@@ -81,10 +81,13 @@ include("../header.php");
             </div>
 
             <div class="next">
-                <button id="verify">Next</button>
+                <button id="verify">Verify</button>
             </div>
             <div class="mesaj-eroare1"></div>
+        </div>
 
+        <div style="display: none;" id="finish-msj" class="row">
+            <p>Congratulations on this quiz! You have collected another <span id="points"></span> points!</p>
         </div>
     </main>
 
