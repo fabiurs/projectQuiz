@@ -106,41 +106,101 @@ footer i{
 /*************/
 /*************/
 
+.admin-edit,
+.start-quiz-row{
+    margin-top: 20px;
+}
+
+.admin-edit a,
+.start-quiz-row a{
+    text-decoration: underline;
+    color: black;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 .c-user{
     padding: 50px 0;
 }
 
-.word-response{
+@media only screen and (max-width: 1130px){
+    .row{
+        padding: 0 20px;
+    }
+}
+/*************/
+/*************/
+/*************/
+/*************/
+/*************/
+/*************/
+
+#addquestion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+textarea{
+    resize: none;
+}
+
+.left-form,
+.right-form{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#addquestion form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#addquestion form .c-response, 
+#addquestion form .c-enunt,
+#addquestion form .c-categ{
+    width: 100%;
+}
+
+
+#addquestion form input, 
+#addquestion form textarea{
+    width: 100%;
+    border-radius: 0;
     border: 1px solid black;
-    border-radius: 20px;
-    padding: 30px 20px 30px 50px ;
-    position: relative;
+    padding: 5px;
+}
+.c-submit{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.word-response li{
-    list-style-type: none;
-    padding-left: 20px;
-    padding-top: 10px;
-    position: relative;
+.c-submit input{
+    max-width: 200px;
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px 20px;
 }
 
-.word-response li::before{
-    content: "->";
-    position: absolute;
-    left: 0;
-}
+@media only screen and (max-width: 768px){
+    .left-form, .right-form{
+        width: 100%;
+    }
 
-.c-close{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-
-.synonyms{
-    padding: 20px 0;
-}
-
-.myword{
-    text-transform: uppercase;
-    font-weight: bold;
+    .left-form input, 
+    .right-form input{
+        margin-bottom: 10px;
+    }
 }

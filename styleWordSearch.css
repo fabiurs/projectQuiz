@@ -1,0 +1,107 @@
+
+.word-response{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px 20px 30px 50px ;
+    position: relative;
+    margin-top: 20px;
+}
+
+.word-response li{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.word-response li::before{
+    content: "->";
+    position: absolute;
+    left: 0;
+}
+
+.c-close{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.synonyms{
+    padding: 20px 0;
+}
+
+.myword{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.api-row{
+    margin-top: 30px;
+}
+
+.api-row h2{
+    margin: 20px 0;
+}
+
+.c-close{
+    cursor: pointer;
+    top: 29px;
+}
+
+.c-close i{
+    font-size: 22px;
+}
+
+#error-message{
+    color: red;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.api-row input{
+    border-radius: none;
+    background: white;
+    color: black;
+    padding: 10px 5px ;
+}
+
+#wordSearch{
+    padding: 10px 20px;
+    border-radius: 0;
+    background: black;
+    color: white;
+    transition: all 0.5s ease;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#wordSearch:hover{
+    color: black;
+    background: white;
+}
+
+@media only screen and (max-width: 768px){
+    .api-row input{
+        width: 100%;
+    }
+
+    #wordSearch{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .word-response{
+        padding-left: 10px;
+        padding-top: 60px;
+    }
+
+    .c-close{
+        top: 20px;
+    }
+}

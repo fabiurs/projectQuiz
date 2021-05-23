@@ -4,6 +4,8 @@
     align-items: center;
     transition: all 0.5s ease-out;
     margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
 }
 
 .c-questions .categorie{
@@ -46,4 +48,29 @@
 .hide-question{
     max-height: 0px!important;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 768px){
+    .c-single-question .categorie{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .c-single-question .enunt{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .c-single-question .raspuns{
+        width: 50%;
+    }
+
+    .c-single-question{
+        flex-wrap: wrap;
+    }
+
+    .c-single-question .deletebtn{
+        margin: 10px 0;
+        width: 50%;
+    }
 }

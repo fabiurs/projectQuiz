@@ -47,7 +47,7 @@ include("header.php");
 
         <?php if($_SESSION["loggedin"] === "true") require("greetings.php"); ?>
 
-        <div class="row">
+        <div class="row admin-edit">
             <?php if($_SESSION["adminlogged"] === "1") echo "You can <a href='questions'>Edit questions</a>"; ?>
         </div>
 

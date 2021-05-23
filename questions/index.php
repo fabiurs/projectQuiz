@@ -45,28 +45,48 @@ include("verifyform.php");
         <div class="row" id="addquestion">
             <h2>Add question</h2>
             <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
-                    <label for="question">Question</label><br>
-                    <textarea id="question" name="question" rows="5" required> </textarea> <br>
-                    
-                    <label for="category">Category</label><br>
-                    <input type="text" id="category" name="category" required><br>
+                    <div class="left-form">
+                        <div class="c-enunt">
+                            <label for="question">Question</label><br>
+                            <textarea id="question" name="question" rows="5" required> </textarea> 
+                        </div>
+                        
+                        <div class="c-categ">
+                            <label for="category">Category</label><br>
+                            <input type="text" id="category" name="category" required>
+                        </div>
+                    </div>
 
-                    <label for="answer1">Answer 1</label><br>
-                    <input type="text" id="answer1" name="answer1" required><br>
-                    
-                    <label for="answer2">Answer 2</label><br>
-                    <input type="text" id="answer2" name="answer2" required><br>
-                    
-                    <label for="answer3">Answer 3</label><br>
-                    <input type="text" id="answer3" name="answer3" required><br>
-                    
-                    <label for="answer4">Answer 4</label><br>
-                    <input type="text" id="answer4" name="answer4" required><br>
-                    
-                    <label for="correctanswer">Correct Answer</label><br>
-                    <input type="text" id="correctanswer" name="correctanswer" required><br>
-                    <br>
-                    <input type="submit" value="Add question">
+                    <div class="right-form">
+                        <div class="c-response">
+                            <label for="answer1">Answer 1</label><br>
+                            <input type="text" id="answer1" name="answer1" required>
+                        </div>
+                        
+                        <div class="c-response">
+                            <label for="answer2">Answer 2</label><br>
+                            <input type="text" id="answer2" name="answer2" required>
+                        </div>
+                        
+                        <div class="c-response">
+                            <label for="answer3">Answer 3</label><br>
+                            <input type="text" id="answer3" name="answer3" required>
+                        </div>
+                        
+                        <div class="c-response">
+                            <label for="answer4">Answer 4</label><br>
+                            <input type="text" id="answer4" name="answer4" required>
+                        </div>
+                        
+                        <div class="c-response">
+                            <label for="correctanswer">Correct Answer</label><br>
+                            <input type="text" id="correctanswer" name="correctanswer" required>
+                        </div>
+                    </div>
+                   
+                    <div class="c-submit">
+                        <input type="submit" value="Add question">
+                    </div>
 
                     <br>
                     <?php echo $mesaj ?>

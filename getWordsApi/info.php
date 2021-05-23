@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row api-row">
 
     <h2>Search for an unknown word</h2>
 
@@ -19,10 +19,10 @@
         </div>
 
         <div class="c-close">
-        <i id="closeBtn" class="fas fa-times"></i>
+            <i id="closeBtn" class="fas fa-times"></i>
         </div>
     </div>
-
+    <link rel="stylesheet" href="styleWordSearch.css">
     <script src="getWordsApi/scriptWord.js"></script>
 
 </div>
