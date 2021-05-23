@@ -55,7 +55,9 @@ include("../header.php");
 
         <div id="instructions" class="row">
             <h3>Instructions</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est doloremque animi. Rerum deleniti neque facere sed? Quas soluta excepturi, sit ipsum quos nemo, quia culpa velit, corrupti asperiores libero eligendi! Vel accusantium nostrum similique rem ex dolorum, reiciendis nihil?</p>
+            <p>Each quiz has 10 questions</p>
+            <p>Select only one answer </p>
+            <p>And good luck;)</p>
         
             <button onClick="startQuiz()">Accept</button>
             <button onClick="showCateg()">Back</button>
