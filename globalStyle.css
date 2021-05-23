@@ -134,3 +134,14 @@ footer i{
 /*************/
 /*************/
 /*************/
+
+.logo h1{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    user-select: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
