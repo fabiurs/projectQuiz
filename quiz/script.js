@@ -198,6 +198,18 @@ function verifyEnd(){
             document.getElementById("row-questions").style.display = "none";
             document.getElementById("points").innerText = points;
             document.getElementById("finish-msj").style.display = "block";
+            updateScore();
         }, 1000);
     }
+}
+
+function updateScore() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log("ok");
+        }
+    };
+    xmlhttp.open("GET", "updateScore.php?s="+points, true);
+    xmlhttp.send();
 }
